@@ -14,6 +14,13 @@ const ROUTE_ALIASES: Record<RouteCategory, string[]> = {
   지인소개: ["지인 소개", "지인소개", "지인"],
 };
 
+/** 대시보드에 표시할 라벨 (신청 경로 분류 기준은 한글 카테고리를 그대로 쓴다). */
+export const ROUTE_DISPLAY_LABELS: Record<RouteCategory, string> = {
+  휴메딕스: "Humedix",
+  엘앤씨바이오: "L&C Bio",
+  지인소개: "지인소개",
+};
+
 export function normalizeRouteCategory(raw: string | null | undefined): RouteCategory {
   const value = (raw ?? "").trim();
   if (!value || value.includes(",") || value.includes("/")) return "지인소개";
@@ -167,7 +174,7 @@ export async function getSummitStats(): Promise<SummitStats> {
   }
   const routeBreakdown = ROUTE_CATEGORIES.map((category) => {
     const count = routeCounts.get(category) ?? 0;
-    return { category, label: category, count, pct: pct(count, total) };
+    return { category, label: ROUTE_DISPLAY_LABELS[category], count, pct: pct(count, total) };
   });
 
   const regionCounts = new Map<string, number>();

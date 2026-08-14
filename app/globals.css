@@ -5,12 +5,12 @@
 @import "@fontsource/pretendard/700.css";
 
 :root {
-  --background: #f2f4f6;
+  --background: #f7f8fa;
   --foreground: #191f28;
 
-  --color-brand: #ff5a38;
-  --color-brand-strong: #e14020;
-  --color-brand-soft: #ffeae3;
+  --color-brand: #ff5c6c;
+  --color-brand-strong: #d93b4c;
+  --color-brand-soft: #ffe3e6;
   --color-surface: #ffffff;
   --color-surface-muted: #f9fafb;
   --color-border: #e5e8eb;

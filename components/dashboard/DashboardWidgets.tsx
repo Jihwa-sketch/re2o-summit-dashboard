@@ -68,7 +68,7 @@ export function RouteBreakdownCard({
         {items.map((item) => (
           <div key={item.category} className="flex flex-1 items-center gap-2">
             <span className={`h-2.5 w-2.5 flex-none rounded-[3px] ${ROUTE_SWATCH[item.category]}`} />
-            <span className="flex-1 text-sm text-text">{item.category}</span>
+            <span className="flex-1 text-sm text-text">{item.label}</span>
             <span className="tabular-nums text-sm font-bold text-text">{item.count}명</span>
             <span className="w-11 text-right tabular-nums text-xs text-text-tertiary">
               {item.pct}%
