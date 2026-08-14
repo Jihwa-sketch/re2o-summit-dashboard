@@ -8,9 +8,10 @@
   --background: #f7f8fa;
   --foreground: #191f28;
 
-  --color-brand: #ff5c6c;
-  --color-brand-strong: #d93b4c;
-  --color-brand-soft: #ffe3e6;
+  /* Pantone 2345 C */
+  --color-brand: #ff6d6a;
+  --color-brand-strong: #e0524f;
+  --color-brand-soft: #ffe4e3;
   --color-surface: #ffffff;
   --color-surface-muted: #f9fafb;
   --color-border: #e5e8eb;
