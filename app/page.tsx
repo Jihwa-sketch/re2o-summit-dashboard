@@ -57,7 +57,7 @@ export default function SummitDashboardPage() {
       <div className="mx-auto flex max-w-3xl flex-col gap-5 px-4 py-6 sm:px-6 sm:py-10">
         <header className="flex items-start justify-between gap-3">
           <div>
-            <p className="text-xs font-bold tracking-wide text-brand uppercase">
+            <p className="text-xs font-bold tracking-wide text-brand">
               Re2O Masters Summit
             </p>
             <h1 className="mt-1 text-xl font-extrabold text-text sm:text-2xl">
